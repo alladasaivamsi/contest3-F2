@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Login Page</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="login-style.css">
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header>Login</header>
+        <form action="chatGptPage.html">
+
+            <div class="field email-field">
+                <div class="input-field">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Enter your email" class="email" id="email">
+                </div>
+                <span class="error email-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error-text">Please enter a valid email</p>
+                </span>
+            </div>
+
+            <div class="field create-password">
+                <div class="input-field">
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="Create password" class="password" id="password">
+                    <i class='bx bx-hide show-hide'></i>
+                </div>
+                <span class="error Password-error">
+                    <i class='bx bx-error-circle error-icon'></i>
+                    <p class="error-text">Password cannot be the same as name or email and should have number, symbol, 1 small and 1 capital letter.</p>
+                </span>
+            </div>
+            <br>    
+            <div>
+                <p id="error"></p>
+            </div>
+                
+
+            <div class="input-field button">
+                <input type="submit" value="Log In">
+            </div>
+        </form>
+    </div>
+
+    <!-- Javascript -->
+    <script src="login-script.js"></script>
+</body>
+</html>
